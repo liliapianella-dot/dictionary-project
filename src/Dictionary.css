@@ -1,0 +1,19 @@
+.Dictionary form input {
+  padding: 10px;
+  border-radius: 4px;
+}
+.Dictionary .inputText {
+  background-color: #f2efe4;
+  font-size: 14px;
+  margin-right: 5px;
+  border: 1px solid #f2efe4;
+}
+.Dictionary .inputSearchButton {
+  margin-left: 5px;
+  border: none;
+  background-color: #ead4ae;
+  transition: all 200ms ease-in-out;
+}
+.Dictionary .inputSearchButton:hover {
+  background-color: #f2efe4;
+}
