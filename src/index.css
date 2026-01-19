@@ -10,11 +10,6 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 0 100px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("./assets/handwriting-1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-
   border-radius: 4px;
-  color: white;
+  background-color: #f2efe4;
 }

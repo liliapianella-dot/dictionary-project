@@ -1,3 +1,25 @@
+.Dictionary {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url("./assets/handwriting-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 30px 100px;
+  border-radius: 4px;
+}
+
+.Dictionary h1 {
+  margin: 100px auto 20px;
+  font-size: 76px;
+  color: white;
+}
+
+.Dictionary h2 {
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+}
+
 .Dictionary form input {
   padding: 10px;
   border-radius: 4px;
