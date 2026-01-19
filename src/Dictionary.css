@@ -27,6 +27,7 @@
 .Dictionary .inputText {
   background-color: #f2efe4;
   font-size: 14px;
+  line-height: 14px;
   margin-right: 5px;
   border: 1px solid #f2efe4;
 }

@@ -4,3 +4,18 @@
 
   text-align: center;
 }
+
+.App footer {
+  font-size: 11px;
+  color: #212121;
+  opacity: 0.8;
+  margin: 20px 0 0;
+  padding: 15px 0;
+  text-align: center;
+}
+.App footer a {
+  color: #a86f0d;
+}
+.App footer a:visited {
+  color: #a86f0d;
+}
