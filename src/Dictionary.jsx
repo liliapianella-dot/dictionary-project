@@ -41,7 +41,7 @@ export default function DictionaryHeader() {
           <input type="submit" value="Search" className="inputSearchButton" />
         </form>{" "}
       </div>
-      <DictionaryResults results={results} />;
+      <DictionaryResults results={results} />
     </div>
   );
 }
