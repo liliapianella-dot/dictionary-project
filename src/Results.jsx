@@ -7,12 +7,14 @@ export default function Results(props) {
   if (props.results) {
     return (
       <div className="Results">
-        <strong className="text-uppercase">{props.results.word} </strong> <br />
-        [{props.results.phonetic}] <br />
+        <strong className="text-uppercase fs-2">{props.results.word} </strong>{" "}
+        <br /> <div className="mb-2">[{props.results.phonetic}] </div> <br />
         {props.results.meanings.map(function (meaning, index) {
           return (
-            <div key={index}>
-              <Meaning meaning={meaning} />
+            <div className="" key={index}>
+              <span className="">
+                <Meaning meaning={meaning} />
+              </span>
             </div>
           );
         })}

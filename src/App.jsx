@@ -15,9 +15,9 @@ export default function App() {
           target="_blank"
           rel="noopener norferrer"
         >
-          Lilia.
-        </a>{" "}
-        It is{" "}
+          Lilia
+        </a>
+        . It is{" "}
         <a
           href="https://github.com/liliapianella-dot/dictionary-project"
           target="_blank"
