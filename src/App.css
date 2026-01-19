@@ -4,3 +4,33 @@
   padding: 2rem;
   text-align: center;
 }
+
+.App h1 {
+  margin: 100px auto 20px;
+  font-size: 76px;
+}
+
+.App h2 {
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.App form input {
+  padding: 10px;
+  border-radius: 4px;
+}
+.App .inputText {
+  background-color: #f2efe4;
+  font-size: 14px;
+  margin-right: 5px;
+  border: 1px solid #f2efe4;
+}
+.App .inputSearchButton {
+  margin-left: 5px;
+  border: none;
+  background-color: #ead4ae;
+}
+.App .inputSearchButton:hover {
+  background-color: #f2efe4;
+}
