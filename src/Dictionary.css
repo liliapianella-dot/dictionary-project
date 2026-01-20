@@ -5,6 +5,7 @@
   background-size: cover;
   padding: 30px 30px 100px;
   border-radius: 4px;
+  box-shadow: 2px 1px 5px 1px rgb(0 0 0 / 0.08);
 }
 
 .Dictionary h1 {
@@ -65,5 +66,9 @@
   .Dictionary .inputText {
     width: 100%;
     margin: 5px 5px 15px;
+    padding: 15px 10px;
+  }
+  .Dictionary .inputSearchButton {
+    margin-left: 15px;
   }
 }

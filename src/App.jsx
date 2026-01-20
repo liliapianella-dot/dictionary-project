@@ -25,7 +25,14 @@ export default function App() {
         >
           open source on GitHub
         </a>{" "}
-        and <a href="/">hosted on Vercel</a>
+        ,<a href="/">hosted on Vercel</a> and the images are from{" "}
+        <a
+          href="https://www.pexels.com/api/"
+          target="_blank"
+          rel="noopener norferrer"
+        >
+          Pexel API
+        </a>
       </footer>
     </div>
   );

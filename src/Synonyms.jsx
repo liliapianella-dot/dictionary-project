@@ -6,6 +6,6 @@ export default function Synonyms(props) {
   } else {
     const sentence = `Synonym: ${props.synonyms.join(", ")}.`;
 
-    return <div>{sentence}</div>;
+    return <div className="text-muted mt-1">{sentence}</div>;
   }
 }
