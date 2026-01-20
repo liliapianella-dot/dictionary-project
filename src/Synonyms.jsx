@@ -12,11 +12,3 @@ export default function Synonyms(props) {
     );
   } else return null;
 }
-// let stringOfSynonymus = synonym.map(function (synonym, index) {
-//   return <div key={index}>{synonym}</div>;
-// });
-
-//   if (synonym) {
-//     return <div> hi </div>;
-//   } else return null;
-// }
