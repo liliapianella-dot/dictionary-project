@@ -5,3 +5,8 @@
   border-radius: 0 0 4px 4px;
   text-align: left;
 }
+
+.Results h2 {
+  margin: 0;
+  text-align: center;
+}

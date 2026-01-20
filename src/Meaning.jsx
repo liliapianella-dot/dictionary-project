@@ -5,7 +5,6 @@ import Contrary from "./Contrary.jsx";
 import Examples from "./Examples.jsx";
 
 export default function Meaning(props) {
-  let example = props.meaning.example;
   let definition = props.meaning.definition;
   definition = definition.split(" ");
   definition[0] = definition[0][0].toUpperCase() + definition[0].slice(1);
