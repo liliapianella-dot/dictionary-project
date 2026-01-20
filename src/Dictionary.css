@@ -1,10 +1,11 @@
 .Dictionary {
+  margin: 120px auto 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
     url("./assets/handwriting-1.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 30px 30px 100px;
-  border-radius: 4px;
+  border-radius: 8px;
   box-shadow: 2px 1px 5px 1px rgb(0 0 0 / 0.08);
 }
 
