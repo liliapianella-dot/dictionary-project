@@ -3,48 +3,7 @@ import axios from "axios";
 import "./Dictionary.css";
 import DictionaryResults from "./Results.jsx";
 
-export default function DictionaryHeader() {
-  const randomWordsArray = [
-    "random",
-    "search",
-    "coding",
-    "content",
-    "love",
-    "dream",
-    "play",
-    "salt",
-    "freedom",
-    "hope",
-    "light",
-    "shadow",
-    "journey",
-    "truth",
-    "silence",
-    "wonder",
-    "growth",
-    "balance",
-    "energy",
-    "focus",
-    "nature",
-    "spark",
-    "wisdom",
-    "future",
-    "change",
-    "strength",
-    "kindness",
-    "motion",
-    "beauty",
-    "courage",
-    "clarity",
-    "purpose",
-    "vision",
-    "peace",
-    "creativity",
-    "connection",
-    "gaming",
-    "nerd",
-    "geek",
-  ];
+export default function DictionaryHeader(props) {
   const [wordkey, setWordkey] = useState("");
   const [results, setResults] = useState("");
   const [randomWord, setRandomWord] = useState("random");
@@ -52,14 +11,9 @@ export default function DictionaryHeader() {
 
   function handleResponse(response) {
     setResults(response.data);
-    // console.log(response.data);
-    // console.log(response.data.phonetic);
-    // console.log(response.data.word);
-    // console.log(response.data.meanings[0].example);
   }
 
-  function handleSearch(event) {
-    event.preventDefault();
+  function handleSearch() {
     let apiKey = "90303e49ba1c9f82cb5tf7o1afec334c";
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${wordkey}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
@@ -71,6 +25,11 @@ export default function DictionaryHeader() {
     axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
   }
 
+  function handleSubmit(event) {
+    event.preventDefault();
+    handleSearch();
+  }
+
   function saveWordKey(event) {
     setWordkey(event.target.value);
   }
@@ -80,7 +39,6 @@ export default function DictionaryHeader() {
   }
 
   function searchRandomWord(text) {
-    // console.log(text);
     let apiKey = "90303e49ba1c9f82cb5tf7o1afec334c";
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${text}&key=${apiKey}`;
     setWordkey(text);
@@ -94,6 +52,7 @@ export default function DictionaryHeader() {
   }
 
   function getRandomWord(event) {
+    let randomWordsArray = props.randomWordsArray;
     const randomIndex = Math.floor(Math.random() * randomWordsArray.length);
     setRandomWord(randomWordsArray[randomIndex]);
     searchRandomWord(randomWord);
@@ -104,7 +63,7 @@ export default function DictionaryHeader() {
       <div className="Dictionary">
         <h1 className="text-uppercase">Dictionary</h1>
         <h2>What word do you want to look up?</h2>
-        <form onSubmit={handleSearch}>
+        <form onSubmit={handleSubmit}>
           <input
             type="search"
             name="search-word"

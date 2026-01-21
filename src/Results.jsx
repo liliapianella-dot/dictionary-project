@@ -4,7 +4,8 @@ import Meaning from "./Meaning";
 import Photos from "./Photos";
 
 export default function Results(props) {
-  //   console.log(props.results.meanings[1].definition);
+  console.log(props.results);
+  console.log(props.photos);
   if (props.results) {
     return (
       <div className="Results">
