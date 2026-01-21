@@ -13,7 +13,8 @@ export default function DictionaryHeader(props) {
     setResults(response.data);
   }
 
-  function handleSearch() {
+  function handleSearch(text) {
+    setWordkey(text);
     let apiKey = "90303e49ba1c9f82cb5tf7o1afec334c";
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${wordkey}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
@@ -27,7 +28,7 @@ export default function DictionaryHeader(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    handleSearch();
+    handleSearch(wordkey);
   }
 
   function saveWordKey(event) {
