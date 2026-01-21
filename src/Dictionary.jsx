@@ -10,7 +10,9 @@ export default function DictionaryHeader(props) {
   const [photos, setPhotos] = useState(null);
 
   function handleResponse(response) {
-    setResults(response.data);
+    if (response.data) {
+      setResults(response.data);
+    } else return null;
   }
 
   function handleSearch(text) {
@@ -81,7 +83,11 @@ export default function DictionaryHeader(props) {
             className="inputSearchButton Random"
           />
         </form>
+        <p className="pt-3 text-white">
+          Enter one English word at time. Hyphen "-" allowed 😉
+        </p>
       </div>
+
       <DictionaryResults results={results} photos={photos} />
     </div>
   );

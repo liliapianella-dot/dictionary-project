@@ -4,9 +4,9 @@ import Meaning from "./Meaning";
 import Photos from "./Photos";
 
 export default function Results(props) {
-  console.log(props.results);
-  console.log(props.photos);
-  if (props.results) {
+  // console.log(props.results);
+  // console.log(props.photos);
+  if (props.results.word && props.photos) {
     return (
       <div className="Results">
         <h2 className="text-uppercase fs-2">{props.results.word}</h2>
